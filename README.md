@@ -1,24 +1,6 @@
-# README
+# sbmmwarzone-bot
+##Bot invite
+* invite the bot to your server [here](https://discord.com/api/oauth2/authorize?client_id=806194575394996324&permissions=0&scope=bot)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##commands
+* cod profile MajorNour#2817
