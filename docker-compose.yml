@@ -6,12 +6,6 @@ services:
       - ./tmp/db:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: password
-    deploy:
-      resources:
-        limits:
-          memory: 50M
-        reservations:
-          memory: 20M
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
@@ -21,10 +15,4 @@ services:
       - "3000:3000"
     depends_on:
       - db
-    deploy:
-      resources:
-        limits:
-          memory: 50M
-        reservations:
-          memory: 20M  
   
