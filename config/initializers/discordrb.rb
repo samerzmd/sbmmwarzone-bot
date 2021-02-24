@@ -40,4 +40,8 @@ bot.command(:profile, user_name: nil) do |event, user_name|
   end
 end
 
-bot.run
+Thread.new do
+  Rails.application.executor.wrap do
+    bot.run
+  end
+end
